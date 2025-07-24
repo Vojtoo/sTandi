@@ -2,6 +2,7 @@ module com.vojtech.javafx {
     requires javafx.controls;
     requires javafx.fxml;
     requires atlantafx.base;
+    requires static lombok;
 
     opens com.vojtech.javafx to javafx.fxml;
     exports com.vojtech.javafx;

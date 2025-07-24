@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <VBox prefHeight="70.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" text="SUBMIT" />
+            <Label text="Label" />
+         </children>
+      </VBox>
+   </bottom>
+   <center>
+      <TableView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="230.0" prefWidth="452.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn prefWidth="100.0" resizable="false" text="ABBR." />
+          <TableColumn prefWidth="501.9999771118164" text="Name" />
+        </columns>
+      </TableView>
+   </center>
+   <top>
+      <VBox prefHeight="90.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField prefHeight="25.0" prefWidth="239.0" />
+                  <Slider blockIncrement="1.0" max="5.0" min="2.0" value="2.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Abbreviation:" />
+                  <TextField prefHeight="25.0" prefWidth="67.0" />
+                  <Label text="Name" />
+                  <TextField prefHeight="25.0" prefWidth="221.0" />
+                  <Button mnemonicParsing="false" text="Add" />
+               </children></HBox>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

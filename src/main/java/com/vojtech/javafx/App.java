@@ -50,8 +50,9 @@ public class App extends Application {
 
         }
 
-
-        stage.setTitle("sTandi.");
+        stage.setWidth(1024);
+        stage.setHeight(768);
+        stage.setTitle("sTandi");
         stage.setScene(scene);
         stage.show();
 

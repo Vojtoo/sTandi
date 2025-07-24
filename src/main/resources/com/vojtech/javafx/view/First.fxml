@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
@@ -23,7 +24,16 @@
          </font>
       </Label>
       <Label fx:id="errorLabel" maxWidth="1.7976931348623157E308" GridPane.columnSpan="3" GridPane.rowIndex="3" />
-      <Button fx:id="loadButton" mnemonicParsing="false" text="Load" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
       <ListView fx:id="lastUsedListView" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <children>
+            <Button fx:id="loadButton" mnemonicParsing="false" text="Load" />
+            <Button fx:id="editButton" mnemonicParsing="false" text="Edit" />
+            <Button fx:id="newCompetitionButton" alignment="TOP_LEFT" mnemonicParsing="false" text="New League" />
+         </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </HBox>
    </children>
 </GridPane>
